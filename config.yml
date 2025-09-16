@@ -1,0 +1,15 @@
+# New default page (`_redirects`)
+pages:
+  default:
+    redirects:
+      path: _redirects
+      output: redirects
+      multilingual: false
+      serviceworker:
+        precache: false
+# Custom output (`redirects`)
+output:
+  formats:
+    - name: redirects
+      mediatype: text/plain
+      extension: ""
