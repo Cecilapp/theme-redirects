@@ -2,7 +2,7 @@
 
 The _Redirects_ component theme for [Cecil](https://cecil.app) provides support of `_redirects`file generation.
 
-After installation and without any configuration, this component theme generate a [`_redirects`](./layouts/_default/page.netlify_redirects.twig) file containing HTML's redirections created by Cecil (automatic or created manually with the [`redirect`](https://cecil.app/documentation/content/#redirect) front matter variable).
+After installation and without any configuration, this component theme generate a [`_redirects`](./layouts/_default/page.redirects.twig) file containing HTML's redirections created by Cecil (automatic or created manually with the [`redirect`](https://cecil.app/documentation/content/#redirect) front matter variable).
 
 Services that support the [`_redirects`](https://specs.ipfs.tech/ipips/ipip-0002/) file:
 
