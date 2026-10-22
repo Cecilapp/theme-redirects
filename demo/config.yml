@@ -1,0 +1,31 @@
+title: Redirects
+description: Demo of the Redirects component theme for Cecil.
+baseurl: http://localhost:8000/
+theme:
+  - redirects
+language: en
+languages:
+  - code: en
+    name: English
+    locale: en_US
+  - code: fr
+    name: Français
+    locale: fr_FR
+server:
+  redirects:
+    # no status, no force
+    - from: /old-blog/*
+      to: /blog/:splat
+    # status only
+    - from: /temporary
+      to: /about/
+      status: 302
+    # force, default status
+    - from: /docs/*
+      to: https://cecil.app/documentation/:splat
+      force: true
+    # status and force
+    - from: /gone
+      to: /
+      status: 410
+      force: true

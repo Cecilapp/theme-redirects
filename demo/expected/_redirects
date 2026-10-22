@@ -1,0 +1,9 @@
+# Cecil redirects' pages
+/cecil/    https://cecil.app    301!
+/fr/a-propos/    /fr/about/    301!
+/about-us/    /about/    301!
+# Redirects defined in config
+/old-blog/*    /blog/:splat
+/temporary    /about/    302
+/docs/*    https://cecil.app/documentation/:splat    301!
+/gone    /    410!

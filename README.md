@@ -38,6 +38,17 @@ server:
       force: true # redirect even if the file exists, optional
 ```
 
+## Development
+
+The [`demo/`](./demo/) website uses the theme under development and covers the supported cases (multilingual aliases, `redirect` front matter, redirections with and without `status` / `force`):
+
+```bash
+php demo/link.php
+php cecil.phar build demo
+```
+
+The generated `demo/_site/_redirects` file must match [`demo/expected/_redirects`](./demo/expected/_redirects): this is checked by the [Test](./.github/workflows/test.yml) workflow.
+
 ## License
 
 _Redirects_ is a free software distributed under the terms of the MIT license.
